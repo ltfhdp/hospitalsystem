@@ -20,7 +20,6 @@ namespace HospitalManagementSystem
 
         private void StaffInformation_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'hospitalDataSet.staff' table. You can move, or remove it, as needed.
             this.staffTableAdapter.Fill(this.hospitalDataSet.staff);
             using (SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\hospital.mdf;Integrated Security=True"))
             {
