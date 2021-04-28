@@ -20,7 +20,7 @@ namespace HospitalManagementSystem
 
         private void PatientInformation_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'hospitalDataSet1.patient' table. You can move, or remove it, as needed.
+            
             this.patientTableAdapter.Fill(this.hospitalDataSet1.patient);
             using (SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\hospital.mdf;Integrated Security=True"))
             {
