@@ -53,12 +53,7 @@ namespace HospitalManagementSystem
             obj5.ShowDialog();
         }
 
-        private void aboutDeveloperToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Developed By: Neeta Kadam");
-        }
-
-        private void closeApplicationToolStripMenuItem_Click(object sender, EventArgs e)
+       private void closeApplicationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
         }
