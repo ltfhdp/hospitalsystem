@@ -20,7 +20,6 @@ namespace HospitalManagementSystem
 
         private void RoomInfo_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'hospitalDataSet2.room' table. You can move, or remove it, as needed.
             this.roomTableAdapter.Fill(this.hospitalDataSet2.room);
             using (SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\hospital.mdf;Integrated Security=True"))
             {
