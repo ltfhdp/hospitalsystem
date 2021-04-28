@@ -20,7 +20,7 @@ namespace HospitalManagementSystem
 
         private void ViewwPatientCheckOut_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'hospitalDataSet3.checkout' table. You can move, or remove it, as needed.
+           
             this.checkoutTableAdapter.Fill(this.hospitalDataSet3.checkout);
             using (SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\hospital.mdf;Integrated Security=True"))
             {
