@@ -1,0 +1,68 @@
+﻿<Page x:Class="HospitalInfoSystem.MainMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HospitalInfoSystem"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainMenu">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Grid.ColumnSpan="20" Fill="#F2F3F8" Grid.RowSpan="11" Opacity="1" Grid.Column="0" Margin="0"/>
+        <Rectangle Grid.ColumnSpan="20" Fill="Black" Grid.RowSpan="11" Opacity="0.19" Grid.Column="0" Margin="0"/>
+        <Label Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="5" VerticalAlignment="Center" FontFamily="Trebuchet MS" FontWeight="Bold" FontSize="22" Foreground="Black" Margin="0,6,0,40.6" Grid.RowSpan="2">SELAMAT DATANG</Label>
+        <Label Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="9" VerticalAlignment="Center" FontFamily="Trebuchet MS" FontWeight="Medium" FontSize="16" Foreground="#333333" Margin="36,21.2,4,31.4" Grid.RowSpan="2">di Sistem Informasi Antri Rumah Sakit</Label>
+        <Border Grid.ColumnSpan="8" Grid.RowSpan="4" Grid.Column="10" Margin="29,10,10,34" Grid.Row="2" CornerRadius="20" Background="Black" Opacity="0.5"/>
+        <Border Grid.ColumnSpan="8" Grid.RowSpan="4" Grid.Column="10" Margin="25,6,14,38" Grid.Row="2" CornerRadius="20" Background="#e4ccc0"/>
+        <Ellipse Height="70" Width="70" Margin="0,34,10,19" Grid.Column="10" Grid.Row="1" Fill="#a38891" Grid.ColumnSpan="2" Grid.RowSpan="3" Opacity="0.5"/>
+        <Ellipse Height="70" Width="70" Grid.Column="9" Grid.Row="1" Fill="#e1bbb2" Grid.ColumnSpan="3" Margin="38,33,12,20" Grid.RowSpan="3"/>
+        <Image x:Name="img_patient" Source="new_patient.png" Grid.Column="10" Grid.Row="2" Grid.ColumnSpan="2" Margin="4,3.6,8,37" Grid.RowSpan="2" RenderTransformOrigin="0.7,0.502"/>
+        <Button x:Name="btnAddQueue" Grid.ColumnSpan="8" Grid.RowSpan="4" Grid.Column="10" Margin="29,10,10,34" Grid.Row="2" Click="BtnAddQueue_Click" Background="#e1bbb2" Opacity="0" BorderBrush="{x:Null}"/>
+        <Label Grid.Column="12" Grid.Row="2" Grid.ColumnSpan="5" Grid.RowSpan="2" VerticalAlignment="Center" FontFamily="Trebuchet MS" FontWeight="DemiBold" FontSize="16" Foreground="Black" Margin="0,33.6,0,19">Tambah Antrian Baru</Label>
+        <Label Grid.Column="12" Grid.Row="3" Grid.ColumnSpan="5" Grid.RowSpan="2" VerticalAlignment="Center" FontFamily="Trebuchet MS" FontWeight="Thin" FontSize="12" Foreground="Black" Height="36" Margin="0,24.8,0,20.8" RenderTransformOrigin="0.827,0.499">Mendaftarkan pasien baru</Label>
+        <Border Grid.ColumnSpan="8" Grid.RowSpan="4" Grid.Column="10" Margin="29,10,10,34" Grid.Row="6" CornerRadius="20" Background="Black" Opacity="0.5"/>
+        <Border Grid.ColumnSpan="8" Grid.RowSpan="4" Grid.Column="10" Margin="25,6,14,38" Grid.Row="6" CornerRadius="20" Background="#e7e4f7"/>
+        <Ellipse Height="70" Width="70" Margin="0,34,10,19" Grid.Column="10" Grid.Row="5" Fill="#756f95" Grid.ColumnSpan="2" Grid.RowSpan="3" Opacity="0.5"/>
+        <Ellipse Height="70" Width="70" Grid.Column="9" Grid.Row="5" Fill="#d8d1fe" Grid.ColumnSpan="3" Margin="38,33,12,20" Grid.RowSpan="3"/>
+        <Image x:Name="img_monitor" Source="monitoring.png" Grid.Column="10" Grid.Row="6" Margin="10,10.4,24,36.2" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <Button x:Name="btnDisplayQueue" Grid.ColumnSpan="8" Grid.RowSpan="4" Grid.Column="10" Margin="29,10,10,34" Grid.Row="6" Click="BtnDisplayQueue_Click" Background="White" Opacity="0" BorderBrush="{x:Null}"/>
+        <Label Grid.Column="12" Grid.Row="6" Grid.ColumnSpan="5" Grid.RowSpan="2" VerticalAlignment="Center" FontFamily="Trebuchet MS" FontWeight="DemiBold" FontSize="16" Foreground="Black" Margin="0,33.4,0,20.2">Lihat Daftar Antrian</Label>
+        <Label Grid.Column="12" Grid.Row="7" Grid.ColumnSpan="5" Grid.RowSpan="2" VerticalAlignment="Center" FontFamily="Trebuchet MS" FontWeight="Thin" FontSize="12" Foreground="Black" Height="36" Margin="0,24.6,0,21" RenderTransformOrigin="0.827,0.499">Melihat antrian pasien</Label>
+    </Grid>
+</Page>
